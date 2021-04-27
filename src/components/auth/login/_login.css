@@ -1,0 +1,157 @@
+.LoginHeader{
+    height: 90px;
+    background-color: #ffff;
+    position: static;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.LoginHeader .s1{
+    color: darkslategrey;
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    margin-top: auto;
+    transition: 0.3s;
+    
+    cursor: pointer;
+
+}
+
+.LoginHeader .s1:hover{
+    font-size: 59px;
+}
+.LoginHeader .s2{
+    color: darkturquoise;
+}
+.LoginHeader button{
+   height: 50%;
+   margin-top: 20px;
+   margin-right: 60px;
+   width: 100px;
+   border: none;
+   outline: none;
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+.LoginMain{
+    width: 100%;
+    margin: 4px auto;
+}
+.LoginMain input{
+    width: 10%;
+    outline: none;
+    height: 45px;
+   
+}
+.LoginMain label{
+    font-size: 20px;
+}
+.LoginMain button{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: 0px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.user{
+    border-radius: 100%;
+    border: 1px solid salmon;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    cursor: pointer;
+}
+.user .fa-user{
+    margin:10px auto;
+}
+.user:hover{
+    transition: 0.2s;
+     border: 2px solid saddlebrown;
+}
+.button{
+    width: 50%;
+    outline: none;
+    border: none;
+    border:1px solid salmon;
+   
+    background-color: white;
+}
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: auto;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+h3{
+    color:azure;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="LoginHeader"] {
+      width: 100%;
+    }
+    .LoginHeader .s1{
+        font-size: 30px;
+    }
+    .LoginHeader .s1:hover{
+        font-size: 29px;
+    }
+    .LoginHeader button{
+        margin-top: auto; 
+    }
+  }
+  
